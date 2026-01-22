@@ -6,26 +6,31 @@ part of 'product_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ProductModel _$ProductModelFromJson(Map<String, dynamic> json) => ProductModel(
+ProductVariantModel _$ProductVariantModelFromJson(Map<String, dynamic> json) =>
+    ProductVariantModel(
       id: json['id'] as String,
-      name: json['name'] as String,
-      brand: json['brand'] as String,
+      title: json['title'] as String,
       price: (json['price'] as num).toDouble(),
-      description: json['description'] as String,
-      images:
-          (json['images'] as List<dynamic>).map((e) => e as String).toList(),
-      rating: (json['rating'] as num).toDouble(),
-      reviews: (json['reviews'] as num).toInt(),
+      inventoryQuantity: json['inventoryQuantity'] as String?,
     );
 
-Map<String, dynamic> _$ProductModelToJson(ProductModel instance) =>
+Map<String, dynamic> _$ProductVariantModelToJson(
+        ProductVariantModel instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'name': instance.name,
-      'brand': instance.brand,
+      'title': instance.title,
       'price': instance.price,
-      'description': instance.description,
-      'images': instance.images,
-      'rating': instance.rating,
-      'reviews': instance.reviews,
+      'inventoryQuantity': instance.inventoryQuantity,
+    };
+
+ProductTabModel _$ProductTabModelFromJson(Map<String, dynamic> json) =>
+    ProductTabModel(
+      title: json['title'] as String,
+      content: json['content'] as String,
+    );
+
+Map<String, dynamic> _$ProductTabModelToJson(ProductTabModel instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'content': instance.content,
     };

@@ -11,7 +11,7 @@ class ProductInitial extends ProductState {}
 class ProductLoading extends ProductState {}
 class ProductLoaded extends ProductState {
   final ProductEntity product;
-  final List<SearchResult> relatedProducts;
+  final List<ProductEntity> relatedProducts;
 
   const ProductLoaded(this.product, this.relatedProducts);
 

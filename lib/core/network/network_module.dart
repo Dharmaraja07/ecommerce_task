@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'mock_interceptor.dart';
+
 
 @module
 abstract class NetworkModule {
@@ -15,7 +15,7 @@ abstract class NetworkModule {
     );
 
     // Add Mock Interceptor
-    dio.interceptors.add(MockInterceptor());
+    // dio.interceptors.add(MockInterceptor());
     
     // Add Log Interceptor
     dio.interceptors.add(LogInterceptor(

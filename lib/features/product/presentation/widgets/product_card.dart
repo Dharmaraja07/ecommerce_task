@@ -1,12 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:ecommerce_app/features/search/domain/entities/search_result.dart';
+import 'package:ecommerce_app/features/product/domain/entities/product_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shimmer/shimmer.dart';
 
 class ProductCard extends StatelessWidget {
-  final SearchResult product;
+  final ProductEntity product;
 
   const ProductCard({super.key, required this.product});
 
@@ -23,9 +23,9 @@ class ProductCard extends StatelessWidget {
             child: Stack(
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(4), // Slight rounding
+                  borderRadius: BorderRadius.circular(4),
                   child: CachedNetworkImage(
-                    imageUrl: product.imageUrl,
+                    imageUrl: product.images.isNotEmpty ? product.images.first : '',
                     width: double.infinity,
                     height: double.infinity,
                     fit: BoxFit.cover,
