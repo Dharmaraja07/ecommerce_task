@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:ecommerce_app/features/product/domain/entities/product_entity.dart';
 import 'package:ecommerce_app/features/product/domain/repositories/product_repository.dart';
-import 'package:ecommerce_app/features/search/domain/entities/search_result.dart';
 import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
+
 
 part 'product_event.dart';
 part 'product_state.dart';
@@ -20,7 +20,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     emit(ProductLoading());
     try {
       final product = await repository.getProductDetails(event.id);
-      final related = await repository.getRelatedProducts(event.id);
+      final related = await repository.getRelatedProducts(event.id); // Returns List<ProductEntity> now
       emit(ProductLoaded(product, related));
     } catch (e) {
       emit(ProductError(e.toString()));

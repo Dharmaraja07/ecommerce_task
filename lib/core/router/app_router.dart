@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:ecommerce_app/features/search/presentation/pages/search_page.dart';
+import 'package:ecommerce_app/features/product/presentation/pages/product_list_page.dart';
 import 'package:ecommerce_app/features/product/presentation/pages/product_page.dart';
 import 'package:ecommerce_app/features/home/presentation/pages/home_page.dart';
 import 'package:ecommerce_app/features/profile/presentation/pages/profile_page.dart';
@@ -25,7 +25,7 @@ final router = GoRouter(
           routes: [
             GoRoute(
               path: '/search',
-              builder: (context, state) => const SearchPage(),
+              builder: (context, state) => const ProductListPage(),
             ),
           ],
         ),

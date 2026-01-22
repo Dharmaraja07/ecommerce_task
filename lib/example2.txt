@@ -1,0 +1,527 @@
+https://api.virgincodes.com/store/product?sort=createdAt%3Adesc
+ 
+
+
+Name	Description
+page
+number
+
+(query)	
+limit
+number
+
+(query)	
+sort
+string
+
+(query)	createdAt:desc
+searchFields
+string
+
+(query)	
+search
+string
+
+(query)	
+
+
+{
+  "statusCode": 200,
+  "success": true,
+  "data": [
+    {
+      "id": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+      "title": "COSRX Advanced Snail Mucin Power Sheet Mask 25ml | Buy 2 Get 1 Free | Expiry Date- 2026/08/25",
+      "subtitle": "hello",
+      "description": "<h3><strong>Now on a special offer: Buy 2 COSRX Snail Mucin Sheet Masks and get 1 FREE—the perfect excuse to stock up on hydration, repair, and glow days ahead.</strong></h3><p>Powered by COSRX’s iconic snail technology, this mask drenches the skin in moisture while helping calm irritation, soften texture, and restore elasticity. Snail mucin is known for its skin-repairing and collagen-supporting properties, making this mask a go-to when your skin feels dull, dry, or compromised.</p><p>Whether you’re dealing with post-acne marks, redness, or seasonal dehydration, this mask helps bring your skin back to life—smooth, plump, and visibly healthier.</p><h3><strong><u>Why It Works</u></strong></h3><p>Soaked in <strong>COSRX Snail 96 Mucin Power Essence</strong>, this sheet mask delivers a snail mucin concentration <strong>up to 7x higher</strong> than most snail-based masks available today.</p><ul><li><p>Deeply hydrates and nourishes dry, weakened skin</p></li><li><p>Helps fade dark spots and acne scars over time</p></li><li><p>Calms redness and supports skin recovery</p></li><li><p>Boosts elasticity for a firmer, more supple look</p></li></ul><p>With consistent use, skin appears clearer, bouncier, and more resilient.</p><h3><strong><u>What Makes It Special</u></strong></h3><ul><li><p><strong>35,000 ppm Snail Mucin</strong> for intensive repair and hydration</p></li><li><p>Helps improve skin texture, tone, and elasticity</p></li><li><p>Lightweight essence that absorbs without stickiness</p></li><li><p>Ideal for dry, tired, or sensitized skin</p></li><li><p>Leaves skin dewy, plump, and glow-boosted</p></li></ul><h3><strong><u>Perfect For</u></strong></h3><ul><li><p>Dehydrated or dull skin days</p></li><li><p>Post-acne recovery and barrier repair</p></li><li><p>Redness, sensitivity, or stressed skin</p></li><li><p>Anyone craving instant glow with long-term benefits</p></li></ul><p>Unwind, mask on, and let your skin soak in the goodness—because sometimes, your skin just needs a little extra love.</p><p><strong>Expiry Date- 2026/08/25</strong></p>",
+      "thumbnail": "assets/2025/12/murkhk38ry",
+      "handle": "cosrx-advanced-snail-mucin-power-sheet-mask-25ml-b2g1",
+      "weight": 100,
+      "height": 1,
+      "width": 1,
+      "length": 1,
+      "hs_code": null,
+      "origin_country": null,
+      "mid_code": null,
+      "material": null,
+      "metadata": {
+        "units_sold_last_month": 5,
+        "show_units_sold_last_month": true,
+        "units_sold_last_month_updated_at": "2025-12-31T22:30:10.875Z"
+      },
+      "createdAt": "2025-12-22T12:38:49.423Z",
+      "updatedAt": "2026-01-14T12:35:06.629Z",
+      "status": "ACTIVE",
+      "brandId": "t1jlr7huplmjo5y7tenvrip9",
+      "createdById": null,
+      "productAttributeGroupId": null,
+      "metaDescription": "Deeply Hydrate & Repair Skin With The COSRX Snail Mucin Sheet Mask. Powered By 35,000 Ppm Snail Mucin For Glow, Elasticity & Barrier Repair. Shop Now At Beautybarn",
+      "metaTitle": "COSRX Advanced Snail Mucin Power Sheet Mask 25ml",
+      "publishedAt": "2025-12-22T12:22:49.599Z",
+      "visibility": "PUBLIC",
+      "reviewsCount": 0,
+      "averageRating": null,
+      "ordersCount": 0,
+      "_count": {
+        "lists": 0
+      },
+      "productImages": [
+        {
+          "id": "cmjh57427006knc4p4cy0ohp8",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "order": 0,
+          "createdAt": "2025-12-22T12:38:49.423Z",
+          "updatedAt": "2025-12-22T12:38:49.423Z",
+          "createdById": null,
+          "image": "assets/2025/12/1gi9zl5r6",
+          "productVariantId": null
+        }
+      ],
+      "prices": [],
+      "productCategories": [
+        {
+          "id": "cmke06xhw00avjee9bn9f5cbq",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "categoryId": "cmfosj2pw00xapjilm4x079i6",
+          "category": {
+            "id": "cmfosj2pw00xapjilm4x079i6",
+            "name": "All",
+            "description": "Category for all products",
+            "parentId": "cmfosj2bj00x2pjiljedw3zxa",
+            "createdAt": "2025-09-18T02:27:32.612Z",
+            "updatedAt": "2025-09-18T02:27:32.618Z",
+            "rank": 63,
+            "deletedAt": null,
+            "metadata": null,
+            "handle": "all",
+            "createdById": "cmfohrryg0001pj95o69cssbs",
+            "fullPath": "All Category >> Skin Type >> All",
+            "fullPathHandle": "skin-type/all",
+            "image": null
+          }
+        },
+        {
+          "id": "cmke06xhw00awjee94aksnjuk",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "categoryId": "cmj9yy3ot0eahnc4e2p53ruza",
+          "category": {
+            "id": "cmj9yy3ot0eahnc4e2p53ruza",
+            "name": "Christmas Winter Glow",
+            "description": "",
+            "parentId": null,
+            "createdAt": "2025-12-17T12:09:28.109Z",
+            "updatedAt": "2025-12-17T12:09:28.120Z",
+            "rank": 76,
+            "deletedAt": null,
+            "metadata": {},
+            "handle": "christmas-winter-glow",
+            "createdById": "cmfoyljrg002x9tbm2vhi5xno",
+            "fullPath": "All Category >> Christmas Winter Glow",
+            "fullPathHandle": "christmas-winter-glow",
+            "image": ""
+          }
+        },
+        {
+          "id": "cmke06xhw00axjee9u7wjy5mx",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "categoryId": "cmfosifoe00rvpjil754hgp27",
+          "category": {
+            "id": "cmfosifoe00rvpjil754hgp27",
+            "name": "Korean Skin Care",
+            "description": "Category for korean skin care products",
+            "parentId": null,
+            "createdAt": "2025-09-18T02:27:02.751Z",
+            "updatedAt": "2025-09-18T02:27:02.755Z",
+            "rank": 6,
+            "deletedAt": null,
+            "metadata": null,
+            "handle": "korean-skin-care",
+            "createdById": "cmfohrryg0001pj95o69cssbs",
+            "fullPath": "All Category >> Korean Skin Care",
+            "fullPathHandle": "korean-skin-care",
+            "image": null
+          }
+        },
+        {
+          "id": "cmke06xhw00ayjee960h6b4cz",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "categoryId": "cmfosj0bg00whpjil1w31fqhm",
+          "category": {
+            "id": "cmfosj0bg00whpjil1w31fqhm",
+            "name": "Hydration",
+            "description": "Category for hydration products",
+            "parentId": "cmfosixvn00w6pjillgyye85m",
+            "createdAt": "2025-09-18T02:27:29.501Z",
+            "updatedAt": "2025-09-18T02:27:29.506Z",
+            "rank": 57,
+            "deletedAt": null,
+            "metadata": null,
+            "handle": "hydration",
+            "createdById": "cmfohrryg0001pj95o69cssbs",
+            "fullPath": "All Category >> Skin Concern >> Hydration",
+            "fullPathHandle": "skin-concern/hydration",
+            "image": null
+          }
+        }
+      ],
+      "productCollections": [],
+      "tags": [
+        {
+          "id": "cmke06xi600azjee9e3u4uxs3",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "tagId": "alm54uf12vco1l77n5hzf5e6",
+          "tag": {
+            "id": "alm54uf12vco1l77n5hzf5e6",
+            "title": "BOGO OFFER",
+            "slug": "bogo-offer",
+            "description": "Buy 2 for the price of 1 on your top Korean skincare picks. Limted-time only!",
+            "metadata": null,
+            "createdAt": "2025-09-18T03:31:27.573Z",
+            "updatedAt": "2025-09-18T03:31:27.573Z",
+            "deletedAt": null,
+            "createdById": null
+          }
+        },
+        {
+          "id": "cmke06xi600b0jee936sbill5",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "tagId": "cmjh2ith80212nc0hmpkalv0b",
+          "tag": {
+            "id": "cmjh2ith80212nc0hmpkalv0b",
+            "title": "Snail Glow",
+            "slug": "snail-glow",
+            "description": "",
+            "metadata": {},
+            "createdAt": "2025-12-22T11:23:56.732Z",
+            "updatedAt": "2025-12-22T11:23:56.732Z",
+            "deletedAt": null,
+            "createdById": "cmfoyljrg002x9tbm2vhi5xno"
+          }
+        },
+        {
+          "id": "cmke06xi600b1jee9skk9ztmz",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "tagId": "cmhvkahsb0b0inc97gaics3gu",
+          "tag": {
+            "id": "cmhvkahsb0b0inc97gaics3gu",
+            "title": "GWP Bundles",
+            "slug": "gwp-bundles",
+            "description": "",
+            "metadata": null,
+            "createdAt": "2025-11-12T05:30:43.211Z",
+            "updatedAt": "2025-11-12T05:30:43.211Z",
+            "deletedAt": null,
+            "createdById": "cmfoyljrg002x9tbm2vhi5xno"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmjh57436006rnc4pfet8n5p6",
+          "productId": "4fb43f5f-63e7-471e-b231-97462a034dd7",
+          "sku": "SNG121",
+          "barcode": null,
+          "price": 750,
+          "metadata": null,
+          "createdAt": "2025-12-22T12:38:49.458Z",
+          "updatedAt": "2025-12-31T06:11:32.540Z",
+          "allowBackOrder": false,
+          "createdById": "cmfoyljrg002x9tbm2vhi5xno",
+          "deletedAt": null,
+          "ean": null,
+          "height": 1,
+          "hsCode": null,
+          "inventoryQuantity": 25,
+          "length": 1,
+          "manageInventory": false,
+          "material": null,
+          "midCode": null,
+          "originCountry": null,
+          "title": "COSRX Snail Mucin Sheet Mask",
+          "upc": null,
+          "variantRank": 1424,
+          "weight": 100,
+          "width": 1,
+          "thumbnail": "assets/2025/12/v56buqbdu2",
+          "specialPrice": 500,
+          "specialPriceEndDate": null,
+          "specialPriceStartDate": null,
+          "gtin": null,
+          "easyecomId": "192431036",
+          "easyecomSku": null,
+          "minQuantityPerCart": null,
+          "maxQuantityPerCart": null,
+          "lastEasyecomSync": null,
+          "easyecomInventoryQuantity": null,
+          "images": [
+            {
+              "id": "cmjh5qy8000aencatm95vscm1",
+              "productId": null,
+              "order": 0,
+              "createdAt": "2025-12-22T12:54:14.976Z",
+              "updatedAt": "2025-12-22T12:54:14.976Z",
+              "createdById": null,
+              "image": "assets/2025/12/3isj6a4k7z6",
+              "productVariantId": "cmjh57436006rnc4pfet8n5p6"
+            }
+          ],
+          "prices": [],
+          "optionValues": [],
+          "originalPrice": 750,
+          "currentPrice": 500,
+          "salePrices": {}
+        }
+      ],
+      "reviews": [],
+      "priceStart": 500,
+      "priceEnd": null
+    },
+    {
+      "id": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+      "title": "COSRX Advanced Snail Mucin Power Sheet Mask 25ml (BUY 10 GET 6 FREE)",
+      "subtitle": null,
+      "description": "<p><strong>COSRX Advanced Snail Mucin Power Sheet Mask 25ml (BUY 10 GET 6 FREE)<br><br></strong>The <strong>COSRX Snail Mucin Sheet Mask</strong> is soaked in 35,000 ppm of concentrated snail mucin to deeply hydrate, repair, and revive dull or irritated skin. Known for soothing redness, boosting elasticity, fading dark spots, and restoring moisture, it leaves your skin plumper, smoother, and more radiant with every use.</p><p>Infused with COSRX’s iconic Snail 96 essence, it delivers seven times the concentration of snail mucin compared to typical masks — making it a powerful choice for dry, tired, or compromised skin.</p><p></p><p><strong>Expiry Date-</strong> 2026/08/25</p>",
+      "thumbnail": "assets/2025/12/dxhexhn7dec",
+      "handle": "cosrx-advanced-snail-mucin-power-sheet-mask-25ml-buy-10-get-6-free",
+      "weight": null,
+      "height": null,
+      "width": null,
+      "length": null,
+      "hs_code": null,
+      "origin_country": null,
+      "mid_code": null,
+      "material": null,
+      "metadata": {
+        "units_sold_last_month": 1,
+        "units_sold_last_month_updated_at": "2025-12-31T22:30:06.187Z"
+      },
+      "createdAt": "2025-12-22T12:14:54.546Z",
+      "updatedAt": "2025-12-31T22:30:06.189Z",
+      "status": "ACTIVE",
+      "brandId": "t1jlr7huplmjo5y7tenvrip9",
+      "createdById": null,
+      "productAttributeGroupId": null,
+      "metaDescription": "Deeply Hydrate & Repair Skin With The COSRX Snail Mucin Sheet Mask. Powered By 35,000 Ppm Snail Mucin For Glow, Elasticity & Barrier Repair. Shop Now At Beautybarn India",
+      "metaTitle": "BUY 10 GET 6 FREE - COSRX Advanced Snail Mucin Power Sheet Mask 25ml",
+      "publishedAt": "2025-12-22T12:07:05.736Z",
+      "visibility": "PUBLIC",
+      "reviewsCount": 0,
+      "averageRating": null,
+      "ordersCount": 0,
+      "_count": {
+        "lists": 0
+      },
+      "productImages": [
+        {
+          "id": "cmjh4ccwi000fnc7h79qb5ssv",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "order": 0,
+          "createdAt": "2025-12-22T12:14:54.546Z",
+          "updatedAt": "2025-12-22T12:14:54.546Z",
+          "createdById": null,
+          "image": "assets/2025/12/eh0wdffllu6",
+          "productVariantId": null
+        }
+      ],
+      "prices": [],
+      "productCategories": [
+        {
+          "id": "cmjh59drf007yncatj5m6ot8e",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "categoryId": "cmj9yy3ot0eahnc4e2p53ruza",
+          "category": {
+            "id": "cmj9yy3ot0eahnc4e2p53ruza",
+            "name": "Christmas Winter Glow",
+            "description": "",
+            "parentId": null,
+            "createdAt": "2025-12-17T12:09:28.109Z",
+            "updatedAt": "2025-12-17T12:09:28.120Z",
+            "rank": 76,
+            "deletedAt": null,
+            "metadata": {},
+            "handle": "christmas-winter-glow",
+            "createdById": "cmfoyljrg002x9tbm2vhi5xno",
+            "fullPath": "All Category >> Christmas Winter Glow",
+            "fullPathHandle": "christmas-winter-glow",
+            "image": ""
+          }
+        },
+        {
+          "id": "cmjh59drf007zncat0tvyo00u",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "categoryId": "cmfosj2pw00xapjilm4x079i6",
+          "category": {
+            "id": "cmfosj2pw00xapjilm4x079i6",
+            "name": "All",
+            "description": "Category for all products",
+            "parentId": "cmfosj2bj00x2pjiljedw3zxa",
+            "createdAt": "2025-09-18T02:27:32.612Z",
+            "updatedAt": "2025-09-18T02:27:32.618Z",
+            "rank": 63,
+            "deletedAt": null,
+            "metadata": null,
+            "handle": "all",
+            "createdById": "cmfohrryg0001pj95o69cssbs",
+            "fullPath": "All Category >> Skin Type >> All",
+            "fullPathHandle": "skin-type/all",
+            "image": null
+          }
+        },
+        {
+          "id": "cmjh59drf0080ncatkjqd6v7u",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "categoryId": "cmfosifoe00rvpjil754hgp27",
+          "category": {
+            "id": "cmfosifoe00rvpjil754hgp27",
+            "name": "Korean Skin Care",
+            "description": "Category for korean skin care products",
+            "parentId": null,
+            "createdAt": "2025-09-18T02:27:02.751Z",
+            "updatedAt": "2025-09-18T02:27:02.755Z",
+            "rank": 6,
+            "deletedAt": null,
+            "metadata": null,
+            "handle": "korean-skin-care",
+            "createdById": "cmfohrryg0001pj95o69cssbs",
+            "fullPath": "All Category >> Korean Skin Care",
+            "fullPathHandle": "korean-skin-care",
+            "image": null
+          }
+        }
+      ],
+      "productCollections": [],
+      "tags": [
+        {
+          "id": "cmjh59drs0081ncatxbjn3jzf",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "tagId": "cmjh2ith80212nc0hmpkalv0b",
+          "tag": {
+            "id": "cmjh2ith80212nc0hmpkalv0b",
+            "title": "Snail Glow",
+            "slug": "snail-glow",
+            "description": "",
+            "metadata": {},
+            "createdAt": "2025-12-22T11:23:56.732Z",
+            "updatedAt": "2025-12-22T11:23:56.732Z",
+            "deletedAt": null,
+            "createdById": "cmfoyljrg002x9tbm2vhi5xno"
+          }
+        },
+        {
+          "id": "cmjh59drs0082ncatnr1j0evz",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "tagId": "alm54uf12vco1l77n5hzf5e6",
+          "tag": {
+            "id": "alm54uf12vco1l77n5hzf5e6",
+            "title": "BOGO OFFER",
+            "slug": "bogo-offer",
+            "description": "Buy 2 for the price of 1 on your top Korean skincare picks. Limted-time only!",
+            "metadata": null,
+            "createdAt": "2025-09-18T03:31:27.573Z",
+            "updatedAt": "2025-09-18T03:31:27.573Z",
+            "deletedAt": null,
+            "createdById": null
+          }
+        },
+        {
+          "id": "cmjh59drs0083ncat563mi7a9",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "tagId": "cmhvkahsb0b0inc97gaics3gu",
+          "tag": {
+            "id": "cmhvkahsb0b0inc97gaics3gu",
+            "title": "GWP Bundles",
+            "slug": "gwp-bundles",
+            "description": "",
+            "metadata": null,
+            "createdAt": "2025-11-12T05:30:43.211Z",
+            "updatedAt": "2025-11-12T05:30:43.211Z",
+            "deletedAt": null,
+            "createdById": "cmfoyljrg002x9tbm2vhi5xno"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmjh4ccxf000lnc7hpeyzq1f8",
+          "productId": "2a5c718b-47df-4de6-acc5-98d9a1b90f36",
+          "sku": "1000612",
+          "barcode": null,
+          "price": 4000,
+          "metadata": null,
+          "createdAt": "2025-12-22T12:14:54.579Z",
+          "updatedAt": "2025-12-30T13:36:49.243Z",
+          "allowBackOrder": false,
+          "createdById": "cmfp03trn002j9tuh7ymfddo8",
+          "deletedAt": null,
+          "ean": null,
+          "height": 1,
+          "hsCode": null,
+          "inventoryQuantity": 29,
+          "length": 1,
+          "manageInventory": false,
+          "material": null,
+          "midCode": null,
+          "originCountry": null,
+          "title": "COSRX Advanced Snail Mucin Power Sheet Mask 25ml (BUY 10 GET 6 FREE)",
+          "upc": null,
+          "variantRank": 1423,
+          "weight": 100,
+          "width": 1,
+          "thumbnail": "assets/2025/12/hje2t0divjg",
+          "specialPrice": 2500,
+          "specialPriceEndDate": null,
+          "specialPriceStartDate": "2025-12-22T12:17:18.000Z",
+          "gtin": null,
+          "easyecomId": "192429020",
+          "easyecomSku": null,
+          "minQuantityPerCart": null,
+          "maxQuantityPerCart": null,
+          "lastEasyecomSync": null,
+          "easyecomInventoryQuantity": null,
+          "images": [
+            {
+              "id": "cmjh4fk6j001znca0sh6763xy",
+              "productId": null,
+              "order": 0,
+              "createdAt": "2025-12-22T12:17:23.947Z",
+              "updatedAt": "2025-12-22T12:17:23.947Z",
+              "createdById": null,
+              "image": "assets/2025/12/p4er6x48wjd",
+              "productVariantId": "cmjh4ccxf000lnc7hpeyzq1f8"
+            }
+          ],
+          "prices": [],
+          "optionValues": [],
+          "originalPrice": 4000,
+          "currentPrice": 2500,
+          "salePrices": {}
+        }
+      ],
+      "reviews": [],
+      "priceStart": 2500,
+      "priceEnd": null
+    },
+    {
+      "id": "ee8ec873-32fc-4004-96c1-4a944a2de203",
+      "title": "Winter Hydration & Repair For Him | Korean Skincare Routine For Men | Cleanse + Repair + Hydrate + Invisible SPF | With Premium Freebies Worth ₹1499",
+      "subtitle": null,
+      "description": "<p><strong>Clean skin. Comfortable hydration. Daily protection.</strong></p><p>The Winter Hydration &amp; Repair For Him bundle is a simple, effective Korean skincare routine built for men dealing with winter dryness, excess oil, clogged pores, and sun exposure. Powered by salicylic acid, peptides, and hyaluronic acid, this routine helps keep skin clear, hydrated, and healthy-looking—without feeling greasy or heavy.</p><p>All products absorb fast, feel light on the skin, and are easy to use daily. Plus, you get premium K-beauty freebies worth ₹1499 that actually work for men’s skin concerns.</p><p>What’s Inside This Routine</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://beautybarn.in/product/salicylic-acid-daily-gentle-cleanser-2\">COSRX Salicylic Acid Daily Gentle Cleanser (150ml)</a></p><p> Helps remove excess oil, dirt, and sweat while keeping pores clean. Ideal for daily use, especially for oily or acne-prone skin.</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://beautybarn.in/product/cosrx-the-6-peptide-skin-booster-serum-150-ml\">COSRX The 6 Peptide Skin Booster Serum (150ml)</a></p><p> A lightweight booster that helps improve skin texture, supports skin repair, and keeps skin hydrated without stickiness.</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://beautybarn.in/product/isntree-hyaluronic-acid-aqua-gel-cream-80ml\">Isntree Hyaluronic Acid Aqua Gel Cream (100ml)</a></p><p> A cooling gel moisturizer that relieves dryness and tightness while keeping skin fresh and comfortable all day.</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://beautybarn.in/product/cosrx-ultra-light-invisible-sunscreen-spf50-pa-50ml\">COSRX Ultra-Light Invisible Sunscreen SPF 50 PA++++ (50ml)</a></p><p> A weightless sunscreen that protects against sun damage with no white cast—perfect for daily outdoor and office use.</p><p></p><p><strong>Premium Freebies Worth ₹1499 (Men-Friendly)</strong></p><p>• Isntree Hyaluronic Acid Toner Mini (20ml) – extra hydration without oiliness</p><p> • ISNTREE Hyaluronic Acid Watery Sun Gel Mini (10ml × 2) – easy reapplication on the go</p><p> • AXIS-Y Dark Spot Correcting Glow Serum (1.5ml × 2) – helps with acne marks and uneven skin tone</p><p> • JM Solution Pure Fish Collagen Pink Mask (30ml) – quick hydration boost for tired, dry skin</p><p>All freebies are practical, lightweight, and suitable for men’s skin.</p><p></p><p><strong>Why This Routine Works for Men</strong></p><p>• Controls oil while preventing winter dryness</p><p> • Helps reduce clogged pores and rough texture</p><p> • Keeps skin hydrated without feeling sticky</p><p> • Simple routine with no complicated steps</p><p> • Lightweight SPF for everyday sun protection</p><p> • Suitable for Indian weather and daily use</p><p><br><strong>Who It’s For</strong></p><p>• Men with oily, dry, or combination skin</p><p> • Acne-prone or easily congested skin</p><p> • Skin affected by winter dryness or pollution</p><p> • Beginners who want an easy skincare routine</p><p> • Men who prefer clean, no-fuss products</p><p></p><p><strong>Additional Information</strong></p><p>For full product details, ingredients, and expiry dates, please refer to each individual product page linked below.</p>",
+      "thumbnail": "assets/2025/12/tbhx8ofui",
+      "handle": "winter-hydration-repair-for-him-korean-skincare-routine-for-men",
+      "weight": null,
+      "height": null,
+      "width": null,
+      "length": null,
+      "hs_code": null,
+      "origin_country": null,
+      "mid_code": null,
+      "material": null,
+      "metadata": {
+        "units_sold_last_month": 1,
+        "units_sold_last_month_updated_at": "2025-12-31T22:30:40.847Z"
+      },
+      "createdAt": "2025-12-17T09:11:52.460Z",
+      "updatedAt": "2025-12-31T22:30:40.848Z",
+      "status": "ACTIVE",
+      "brandId": "t1jlr7huplmjo5y7tenvrip9",
+      "createdById": null,

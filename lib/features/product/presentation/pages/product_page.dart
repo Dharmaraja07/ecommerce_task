@@ -3,11 +3,11 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app/core/di/injection.dart';
 import 'package:ecommerce_app/features/product/domain/entities/product_entity.dart';
 import 'package:ecommerce_app/features/product/presentation/bloc/product_bloc.dart';
-import 'package:ecommerce_app/features/search/domain/entities/search_result.dart'; // For initial data
-import 'package:ecommerce_app/features/search/presentation/widgets/product_card.dart'; // Reuse
+import 'package:ecommerce_app/features/product/presentation/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -17,7 +17,7 @@ class ProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      final extra = GoRouterState.of(context).extra;
-     final String productId = (extra is SearchResult) ? extra.id : '1'; 
+     final String productId = (extra is ProductEntity) ? extra.id : (extra is String ? extra : '1'); 
 
     return BlocProvider(
       create: (context) => getIt<ProductBloc>()..add(LoadProductDetails(productId)),
@@ -68,7 +68,7 @@ class _ProductViewState extends State<ProductView> {
     );
   }
 
-  Widget _buildProductContent(ProductEntity product, List<dynamic> related) {
+  Widget _buildProductContent(ProductEntity product, List<ProductEntity> related) {
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,9 +79,9 @@ class _ProductViewState extends State<ProductView> {
             children: [
               CarouselSlider(
                 options: CarouselOptions(
-                  height: 400,
+                  height: 480, // Increased height for better view
                   viewportFraction: 1.0,
-                  enableInfiniteScroll: false,
+                  enableInfiniteScroll: product.images.length > 1,
                   onPageChanged: (index, reason) {
                     setState(() {
                       _currentImageIndex = index;
@@ -95,24 +95,27 @@ class _ProductViewState extends State<ProductView> {
                         imageUrl: img,
                         fit: BoxFit.cover,
                         width: double.infinity,
+                        errorWidget: (context, url, error) => const Icon(Icons.error),
                       );
                     },
                   );
                 }).toList(),
               ),
-              Positioned(
-                bottom: 20,
-                child: AnimatedSmoothIndicator(
-                  activeIndex: _currentImageIndex,
-                  count: product.images.length,
-                  effect: const ExpandingDotsEffect(
-                    activeDotColor: Colors.black,
-                    dotColor: Colors.grey,
-                    dotHeight: 8,
-                    dotWidth: 8,
+              if (product.images.length > 1)
+                Positioned(
+                  bottom: 20,
+                  child: AnimatedSmoothIndicator(
+                    activeIndex: _currentImageIndex,
+                    count: product.images.length,
+                    effect: const ExpandingDotsEffect(
+                      activeDotColor: Colors.black,
+                      dotColor: Colors.grey,
+                      dotHeight: 8,
+                      dotWidth: 8,
+                      spacing: 4,
+                    ),
                   ),
                 ),
-              ),
             ],
           ),
 
@@ -122,23 +125,28 @@ class _ProductViewState extends State<ProductView> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Brand Logic
-                Text(
-                  product.brand.toUpperCase(),
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                ),
-                const SizedBox(height: 8),
+                if (product.brand.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Text(
+                      product.brand.toUpperCase(),
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    ),
+                  ),
+                
                 Text(
                   product.name,
-                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                  style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 8),
+                
                  Row(
                   children: [
                     RatingBarIndicator(
                       rating: product.rating,
                       itemBuilder: (context, index) => const Icon(
                         Icons.star,
-                        color: Colors.amber,
+                        color: Colors.black, // Sephora style often uses black stars or specific color
                       ),
                       itemCount: 5,
                       itemSize: 16.0,
@@ -152,19 +160,46 @@ class _ProductViewState extends State<ProductView> {
                   ],
                 ),
                 const SizedBox(height: 16),
+                
                 Text(
                   '\$${product.price.toStringAsFixed(2)}',
                   style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 24),
+                
+                // Variant / Shades placeholder
+                if (product.variants.isNotEmpty) ...[
+                   const SizedBox(height: 24),
+                   const Text("Color: Selected", style: TextStyle(fontWeight: FontWeight.bold)),
+                   const SizedBox(height: 8),
+                   SingleChildScrollView(
+                     scrollDirection: Axis.horizontal,
+                     child: Row(
+                       children: product.variants.map((v) => Container(
+                         margin: const EdgeInsets.only(right: 8),
+                         width: 30, height: 30,
+                         decoration: BoxDecoration(
+                           color: Colors.grey[300], // Placeholder color
+                           shape: BoxShape.circle,
+                           border: Border.all(color: Colors.grey),
+                         ),
+                       )).toList(),
+                     ),
+                   )
+                ],
+
+                const SizedBox(height: 32),
+                const Divider(),
+                const SizedBox(height: 16),
+
                 const Text(
                   "Description",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
                 const SizedBox(height: 8),
-                 Text(
+                
+                HtmlWidget(
                   product.description,
-                  style: const TextStyle(fontSize: 14, height: 1.5, color: Colors.black87),
+                  textStyle: const TextStyle(fontSize: 14, height: 1.5, color: Colors.black87),
                 ),
                 
                  const SizedBox(height: 32),
@@ -175,21 +210,22 @@ class _ProductViewState extends State<ProductView> {
                 const SizedBox(height: 16),
                 
                 // Related Products
-                SizedBox(
-                  height: 220,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: related.length,
-                    itemBuilder: (context, index) {
-                      // Reuse ProductCard but resize it
-                      return Container(
-                        width: 160,
-                        margin: const EdgeInsets.only(right: 16),
-                        child: ProductCard(product: related[index]),
-                      );
-                    },
+                if (related.isNotEmpty)
+                  SizedBox(
+                    height: 280,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: related.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 160,
+                          margin: const EdgeInsets.only(right: 16),
+                          child: ProductCard(product: related[index]),
+                        );
+                      },
+                    ),
                   ),
-                ),
+                
                 const SizedBox(height: 80), // Space for bottom bar
               ],
             ),
@@ -213,16 +249,24 @@ class _ProductViewState extends State<ProductView> {
         ],
       ),
       child: SafeArea(
-        child: ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFFE80022), // Sephora Red
-            minimumSize: const Size(double.infinity, 50),
-          ),
-          child: const Text(
-            "Add to Basket",
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          ),
+        child: Row(
+          children: [
+            Expanded(
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFE80022), // Sephora Red (approx)
+                  foregroundColor: Colors.white,
+                  minimumSize: const Size(double.infinity, 50),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                ),
+                child: const Text(
+                  "Add to Basket",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
